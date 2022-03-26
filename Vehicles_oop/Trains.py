@@ -5,7 +5,7 @@ class Trains(Vehicles):
         self.years = years
     def getYears(self):
         return self.years
-    def setFlight_Hs(self,years):
+    def setYears(self,years):
         self.years = years
     def __str__(self):
         return super().__str__()+" "+str(self.years)

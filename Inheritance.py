@@ -119,36 +119,36 @@
 '''------------------'''
 # Exercise
 # QA1
-from Cars import Cars
-from Trains import Trains
-from Bycycle import Bycycle
-from Plains import Plains
-train1 = Trains(200,'black',"TfhTrain2000",4)
-train2 = Trains(178,'yellow',"SfPlatinum2000",12)
-train3 = Trains(320,'black/white',"AlphaSS3000",1)
-plain1 = Plains(4,"white","Loftahnzasrs",12000)
-plain2 = Plains(6,"blaugrana","AirBus2000",120)
-plain3 = Plains(7,"black","Totto12S",15000)
-car1 = Cars(4,"gray","honda",120000)
-car2 = Cars(4,"white","hyundai",70000)
-car3 = Cars(4,"white/black","BMW",50000)
-bycycle1 = Bycycle(2,'brown','kalfon',16)
-bycycle2 = Bycycle(2,'black','kalfon',12)
-bycycle3 = Bycycle(2,'gold','Bolt',14)
-a = car1.__dict__  #"""from 196 line to 204 line ,outside the QA"""
-b = a.values()
-c = a.items()
-for i in a:
-    print(i)
-for i in b:
-    print(i)
-for i in c:
-    print(i)
-print(plain2,bycycle1,car3,train2,sep="\n")
-car3.setColor("black\gold")
-print(car3)
-print(train2)
-
+# from Cars import Cars
+# from Trains import Trains
+# from Bycycle import Bycycle
+# from Plains import Plains
+# train1 = Trains(200,'black',"TfhTrain2000",4)
+# train2 = Trains(178,'yellow',"SfPlatinum2000",12)
+# train3 = Trains(320,'black/white',"AlphaSS3000",1)
+# plain1 = Plains(4,"white","Loftahnzasrs",12000)
+# plain2 = Plains(6,"blaugrana","AirBus2000",120)
+# plain3 = Plains(7,"black","Totto12S",15000)
+# car1 = Cars(4,"gray","honda",120000)
+# car2 = Cars(4,"white","hyundai",70000)
+# car3 = Cars(4,"white/black","BMW",50000)
+# bycycle1 = Bycycle(2,'brown','kalfon',16)
+# bycycle2 = Bycycle(2,'black','kalfon',12)
+# bycycle3 = Bycycle(2,'gold','Bolt',14)
+# a = car1.__dict__  #"""from 196 line to 204 line ,outside the QA"""
+# b = a.values()
+# c = a.items()
+# for i in a:
+#     print(i)
+# for i in b:
+#     print(i)
+# for i in c:
+#     print(i)
+# print(plain2,bycycle1,car3,train2,sep="\n")
+# car3.setColor("black\gold")
+# print(car3)
+# print(train2)
+#
 # QA2
 from Tiger import Tiger
 tiger1 = Tiger(4,"India",4)
@@ -167,3 +167,15 @@ donkey1 = Donkey(6,"Ireland",4)
 donkey2 = Donkey(5,"Cyprus",4)
 donkey3 = Donkey(2,"Peru",4)
 print(donkey1,horse2,lion3,tiger1,sep="\n")
+
+def Mating(animel1,animal2):
+    if (type(animel1) == Donkey or Horse) and (type(animal2) == Donkey or  Horse):
+        return "The outcome is Mule"
+    elif animel1 == Lion and animal2 == Tiger:
+        return "The outcome is Liger"
+    elif animel1 == Lion and animal2 == Tiger:
+        return "The outcome is Tigon"
+    else:
+        print("Invaild breed!")
+
+print(Mating(lion2,horse2))

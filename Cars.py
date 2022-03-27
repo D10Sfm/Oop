@@ -1,6 +1,6 @@
 from Vehicles import Vehicles
 class Cars(Vehicles):
-    def __init__(self,wheels,color,model,kms):
+    def __init__(self,wheels,color,model,kms=None):
         super().__init__(wheels,color,model)
         self.kms = kms
     def getKms(self):

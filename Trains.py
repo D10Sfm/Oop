@@ -1,6 +1,6 @@
 from Vehicles import Vehicles
 class Trains(Vehicles):
-    def __init__(self,wheels,color,model,years=0):
+    def __init__(self,wheels,color,model,years=None):
         super().__init__(wheels,color,model)
         self.years = years
     def getYears(self):

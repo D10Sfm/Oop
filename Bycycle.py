@@ -1,6 +1,6 @@
 from Vehicles import Vehicles
 class Bycycle(Vehicles):
-    def __init__(self,wheels,color,model,size):
+    def __init__(self,wheels,color,model,size=None):
         super().__init__(wheels,color,model)
         self.size = size
     def getSize(self):

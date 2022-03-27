@@ -1,9 +1,9 @@
 """Animels Class"""
 class Animels:
-    def __init__(self,age,family,land_of_origin):
+    def __init__(self,age,land_of_origin,family):
         self.age = age
-        self.family = family
         self.land_of_origin = land_of_origin
+        self.family = family
     def getAge(self):
         return self.age
     def getFamily(self):
@@ -17,4 +17,4 @@ class Animels:
     def setLand_of_origin(self,land_of_origin):
         self.land_of_origin = land_of_origin
     def __str__(self):
-        return str(self.age)+" "+self.family+" "+self.land_of_origin
+        return str(self.age)+" "+self.land_of_origin+" "+self.family

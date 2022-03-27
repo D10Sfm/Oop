@@ -1,8 +1,7 @@
 from Mammels import Mammals
 class Predators(Mammals):
-    def __init__(self,age,family,land_of_origin,no_legs,gender,breed):
-        if super().family == "mammals" and super().gender == "Predators":
-            super().__init__(age,family,land_of_origin,no_legs,gender)
+    def __init__(self,age,land_of_origin,no_legs,breed):
+            super().__init__(age,land_of_origin,no_legs,gender="predator")
             self.breed = breed
     def getBreed(self):
         return self.breed

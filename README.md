@@ -1,2 +1,2 @@
 # Oop
-Exercise with Oop in python
+Basic Exercise with Oop in python
